@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// time complexity of selection sort for every case is O(n^2)
 
+//Definiion - 
 void selectionSort(int arr[], int n){
     for (int i=0;i<=n-2;i++){ //remeber that this loop is to iterate over array index
         int mini = i;
@@ -16,7 +18,10 @@ void selectionSort(int arr[], int n){
         arr[i] = temp;
     }    
 }
-
+/*
+We run i till n-2 because the last element is automatically sorted, and 
+j till n-1 because we must compare with every remaining element to find the minimum.
+*/
 
 int main(){
     cout<<"provide the length of array"<<endl;
@@ -33,7 +38,7 @@ int main(){
 
     // printing the sorted array 
 
-    cout<<"sorted array"<<endl;
+    cout<<"sorted array using selection sort algorithm"<<endl;
     for (int i = 0; i<n ;i++){
         cout<< arr[i]<<" "<<endl;
 
