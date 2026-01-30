@@ -3,7 +3,10 @@ using namespace std;
 
 // time complexity of selection sort for every case is O(n^2)
 
-//Definiion - 
+/*
+Definiion - Selection Sort is a simple comparison-based sorting algorithm in which it 
+repeatedly selects the minimum element and moves it to the front.
+*/
 void selectionSort(int arr[], int n){
     for (int i=0;i<=n-2;i++){ //remeber that this loop is to iterate over array index
         int mini = i;
